@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0px 12px 12px 5px #00000040;
+
+}
+.navLogo{
+    width: 4%;
+    height: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    transition: .2s;
+}
+.navLogo:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.title{
+    color: #454545;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);    
+    pointer-events: none;
+
+}
+.slide{
+    height: 40px;
+    cursor: pointer;
+    opacity: 60%;
+    transition: .2s;
+}
+.slide:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.slidebar{
+    position: absolute;
+    height: 100vh;
+    width: 28%;
+    background-color: #D9D9D9;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0px 10px 10px 5px #00000040;
+    transition: transform 1s ease-in-out;
+    display: none;
+    
+
+}
+.cut{
+    width: 100%;
+    padding: 30px 25px;
+    
+}
+.cutimg{
+    width: 35px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #00000040;
+    opacity: 80%;
+    border-radius: 5px;
+    transition: .2s;
+}
+.cutimg:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.more{
+    font-size: 28px;
+    font-weight: 600;
+    color: #454545;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);    
+    pointer-events: none;
+    margin-bottom: 40px;
+}
+.links{
+    height: 60px;
+    width: 100%;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+}
+.links:hover{
+    background-color: gray;
+    transition: .1s;
+}
+.links a{
+    text-decoration: none;
+    color: #454545;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);    
+    opacity: 90%;
+}
+.copy{
+    color: #454545;
+    opacity: 90%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 70px;
+    pointer-events: none;
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: linear-gradient(to bottom, #8399A2, #EEF2F3);
+
+}
