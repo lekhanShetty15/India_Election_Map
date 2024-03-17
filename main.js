@@ -9,3 +9,9 @@ slide.addEventListener("click", ()=>{
 cut.addEventListener("click", ()=>{
     slidebar.style.display="none"
 })
+
+
+
+
+
+
