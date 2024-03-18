@@ -454,3 +454,30 @@
 
 
     
+#bjp{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+    /* congress party button */
+
+#congress{
+    display: none;
+}
+
+
+
+
+
+    /* others party button */
+
+    #others{
+        display: none;
+    }

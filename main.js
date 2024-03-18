@@ -17,14 +17,36 @@ cut.addEventListener("click", ()=>{
 
 
 
+let all = document.getElementById("all");
+let bjp = document.getElementById("bjp");
+let congress = document.getElementById("congress")
+let others = document.getElementById("others")
+
+
+// all party page party buttons
 
 let bjpBtn = document.getElementById("bjpBtn");
-let ALLparty = document.getElementById("ALLparty");
-let all = document.getElementById("all");
-let bjp = document.getElementById("main2");
+let congBtn = document.getElementById("congBtn")
+let othersBtn = document.getElementById("othersBtn")
+
+
 
 bjpBtn.addEventListener("click",()=>{
     all.style.display="none"
     bjp.style.display="block"
     
 })
+congBtn.addEventListener("click",()=>{
+    all.style.display="none"
+    bjp.style.display="none"
+    congress.style.display="block"
+})
+othersBtn.addEventListener("click",()=>{
+    all.style.display="none"
+    bjp.style.display="none"
+    congress.style.display="none"
+    others.style.display="block"
+})
+
+
+
