@@ -54,11 +54,11 @@
     gap: 20px;
 }
 .home{
-    font-size: 30px;
+    font-size: 26px;
     opacity: 50%;
     transition: .2s;
     cursor: pointer;
-    margin-top: -5px;
+   
 }
 .home:hover{
     transform: scale(1.1);
@@ -82,7 +82,7 @@
     top: 0px;
     right: 0px;
     box-shadow: 0px 10px 10px 5px #00000040;
-    transition: transform 1s ease-in-out;
+    transition: transform .2s ease-in-out;
     display: none;
     z-index: 2;
     
@@ -118,7 +118,7 @@
     height: 60px;
     width: 100%;
     list-style: none;
-    font-size: 25px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
