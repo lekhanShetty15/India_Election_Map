@@ -970,3 +970,197 @@ function displayStateDetailsbjpright(state) {
   }
   
   }
+
+
+
+
+
+
+
+
+  
+// congress page left states object
+
+const congressleftStates = [
+{
+  state: "KARNATAKA",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "SIDDARAMAIAH"
+},
+{
+  state: "HIMACHAL PRADESH",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+},
+
+{
+  state: "JAMMU & LADDHAK",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+},
+{
+  state:"LAKSHADWEEP",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+}
+];
+
+
+const stateleftCongress = document.getElementById("stateleftCongress");
+const seatsleftCongress = document.getElementById("seatsleftCongress");
+const mlaleftCongress = document.getElementById("mlaleftCongress");
+const mpleftCongress = document.getElementById("mpleftCongress");
+const cmnameleftCongress = document.getElementById("cm-nameleftCongress");
+let popupCongressleft = document.querySelectorAll(".popupCongressleft")
+let cut1Congress = document.getElementById("cut1Congress")
+
+
+cut1Congress.addEventListener("click",()=>{
+  popupCongressleft.forEach(element => {
+    element.style.display = "none";
+  });
+})
+
+function hidePopupscongressleft() {
+  popupCongressleft.forEach(element => {
+    element.style.display = "block";
+  });
+}
+
+
+// left congress states
+
+const KarnatakaCongress = document.getElementById("KarnatakaCongress");
+KarnatakaCongress.addEventListener("click", () => {
+  displayStateDetailsleftcongress("KARNATAKA");
+ hidePopupscongressleft();
+});
+
+const HimachalCongress = document.getElementById("HimachalCongress");
+HimachalCongress.addEventListener("click", () => {
+  displayStateDetailsleftcongress("HIMACHAL PRADESH");
+ hidePopupscongressleft();
+});
+
+const JammuCongress = document.getElementById("JammuCongress");
+JammuCongress.addEventListener("click", () => {
+  displayStateDetailsleftcongress("JAMMU & LADDHAK");
+hidePopupscongressleft();
+});
+
+const LakshadweepCongress = document.getElementById("LakshadweepCongress");
+LakshadweepCongress.addEventListener("click", () => {
+  displayStateDetailsleftcongress("LAKSHADWEEP");
+hidePopupscongressleft();
+});
+
+
+
+
+
+function displayStateDetailsleftcongress(state) {
+const stateDetailscongleft = congressleftStates.find(item => item.state === state);
+if (stateDetailscongleft) {
+  stateleftCongress.innerHTML = stateDetailscongleft.state;
+  seatsleftCongress.innerHTML = "" + stateDetailscongleft.seats;
+  mlaleftCongress.innerHTML = "" + stateDetailscongleft.mla;
+  mpleftCongress.innerHTML = "" + stateDetailscongleft.mp;
+  cmnameleftCongress.innerHTML = "" + stateDetailscongleft.cmName;
+
+  cmnameleftCongress.style.backgroundColor = "";
+
+  if(state === "JAMMU & LADDHAK" || state === "LAKSHADWEEP"){
+    cmnameleftCongress.style.backgroundColor = "#808080";
+
+  }
+}
+
+}
+
+
+
+
+
+// congress page right states object
+
+const congressRightStates = [
+  {
+    state: "TELANGANA",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "ANDAMAN AND NICOBAR",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  }
+  ];
+  
+  
+  const stateRightCongress = document.getElementById("stateRightCongress");
+  const seatsRightCongress = document.getElementById("seatsRightCongress");
+  const mlaRightCongress = document.getElementById("mlaRightCongress");
+  const mpRightCongress = document.getElementById("mpRightCongress");
+  const cmnameRightCongress = document.getElementById("cm-nameRightCongress");
+  let popupCongressRight = document.querySelectorAll(".popupCongressRight")
+  let cut2Congress = document.getElementById("cut2Congress")
+  
+  
+  cut2Congress.addEventListener("click",()=>{
+    popupCongressRight.forEach(element => {
+      element.style.display = "none";
+    });
+  })
+  
+  function hidePopupscongressRight() {
+    popupCongressRight.forEach(element => {
+      element.style.display = "block";
+    });
+  }
+  
+  
+  // right congress states
+  
+  const TelanganaCongress = document.getElementById("TelanganaCongress");
+  TelanganaCongress.addEventListener("click", () => {
+    displayStateDetailsRightcongress("TELANGANA");
+    hidePopupscongressRight();
+  });
+  
+  const AndamanCongress = document.getElementById("AndamanCongress");
+  AndamanCongress.addEventListener("click", () => {
+    displayStateDetailsRightcongress("ANDAMAN AND NICOBAR");
+    hidePopupscongressRight();
+  });
+  
+  
+  function displayStateDetailsRightcongress(state) {
+  const stateDetailscongRight = congressRightStates.find(item => item.state === state);
+  if (stateDetailscongRight) {
+    stateRightCongress.innerHTML = stateDetailscongRight.state;
+    seatsRightCongress.innerHTML = "" + stateDetailscongRight.seats;
+    mlaRightCongress.innerHTML = "" + stateDetailscongRight.mla;
+    mpRightCongress.innerHTML = "" + stateDetailscongRight.mp;
+    cmnameRightCongress.innerHTML = "" + stateDetailscongRight.cmName;
+  
+    cmnameRightCongress.style.backgroundColor = "";
+  
+    if(state === "ANDAMAN AND NICOBAR"){
+      cmnameRightCongress.style.backgroundColor = "#808080";
+  
+    }
+  }
+  
+  }
