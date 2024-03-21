@@ -61,13 +61,6 @@ const leftStates = [{
   cmName: "BUPENDRASINGH BHAI"
 },
 {
-  state: "MADHYA PRADESH",
-  seats: "245",
-  mla: "145",
-  mp: "175",
-  cmName: "MOHAN YADAV"
-},
-{
   state: "KARNATAKA",
   seats: "220",
   mla: "120",
@@ -589,5 +582,155 @@ function displayStateDetailsright(state) {
   
   }
   
+
+
+
+
+  // bjp left side states
   
+
+
+
+  
+const leftBjpStates = [{
+  state: "RAJASTHAN",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "MAHARASHTRA",
+  seats: "300",
+  mla: "150",
+  mp: "200",
+  cmName: "EKNATH SHINDE"
+},
+{
+  state: "GUJURAT",
+  seats: "270",
+  mla: "125",
+  mp: "170",
+  cmName: "BUPENDRASINGH BHAI"
+},
+{
+  state: "JAMMU & LADDHAK",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+},
+{
+  state: "GOA",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+},
+{
+  state:"LAKSHADWEEP",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+},
+{
+  state:"HARYANA",
+  seats: "220",
+  mla: "120",
+  mp: "145",
+  cmName: "AMARINDER SINGH"
+}
+];
+
+
+const stateleftbjp = document.getElementById("stateleftbjp");
+const seatsleftbjp = document.getElementById("seatsleftbjp");
+const mlaleftbjp = document.getElementById("mlaleftbjp");
+const mpleftbjp = document.getElementById("mpleftbjp");
+const cmnameleftbjp = document.getElementById("cm-nameleftbjp");
+let popupbjpleft = document.querySelectorAll(".popupbjpleft")
+let cut1bjp = document.getElementById("cut1bjp")
+
+
+cut1bjp.addEventListener("click",()=>{
+  popupbjpleft.forEach(element => {
+    element.style.display = "none";
+  });
+})
+
+function hidePopupsbjpleft() {
+  popupbjpleft.forEach(element => {
+    element.style.display = "block";
+  });
+}
+
+
+// left bjp states
+
+const RajasthanBjp = document.getElementById("RajasthanBjp");
+RajasthanBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("RAJASTHAN");
+  console.log("rajasthan");
+  hidePopupsbjpleft();
+});
+
+let MaharashtraBjp = document.getElementById("MaharashtraBjp")
+MaharashtraBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("MAHARASHTRA");
+  hidePopupsbjpleft();
+});
+
+const JammuBjp = document.getElementById("JammuBjp");
+JammuBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("JAMMU & LADDHAK");
+  hidePopupsbjpleft();
+});
+
+const GujaratBjp = document.getElementById("GujaratBjp");
+GujaratBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("GUJURAT");
+  hidePopupsbjpleft();
+});
+
+const GoaBjp = document.getElementById("GoaBjp");
+GoaBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("GOA");
+  hidePopupsbjpleft();
+});
+
+const LakshadweepBjp = document.getElementById("LakshadweepBjp");
+LakshadweepBjp.addEventListener("click", () => {
+displaybjpleftStateDetails("LAKSHADWEEP");
+hidePopupsbjpleft();
+});
+
+const HaryanaBjp = document.getElementById("HaryanaBjp");
+HaryanaBjp.addEventListener("click", () => {
+  displaybjpleftStateDetails("HARYANA");
+  hidePopupsbjpleft();
+});
+
+
+
+
+function displaybjpleftStateDetails(state) {
+const statebjpDetails = leftStates.find(item => item.state === state);
+if (statebjpDetails) {
+  stateleftbjp.innerHTML = statebjpDetails.state;
+  seatsleftbjp.innerHTML = "" + statebjpDetails.seats;
+  mlaleftbjp.innerHTML = "" + statebjpDetails.mla;
+  mpleftbjp.innerHTML = "" + statebjpDetails.mp;
+  cmnameleftbjp.innerHTML = "" + statebjpDetails.cmName;
+
+  cmnameleftbjp.style.backgroundColor = "";
+
+  if(state === "JAMMU & LADDHAK" || state === "LAKSHADWEEP"){
+    cmnameleftbjp.style.backgroundColor = "#808080";
+
+  }
+}
+
+}
+
   

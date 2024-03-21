@@ -641,7 +641,7 @@
 
 }
 #cm-name{
-    background-color: #FF9900;
+    background-color: #f97d09;
     color: white;
     font-size: 13px;
     font-weight: 500;
@@ -721,7 +721,7 @@
 
 }
 #cm-nameright{
-    background-color: #FF9900;
+    background-color: #f97d09;
     color: white;
     font-size: 13px;
     font-weight: 500;
@@ -730,3 +730,118 @@
 }
 
 
+
+
+/* bjp page popup left side */
+
+
+
+.popupbjpleft{
+    position: absolute;
+    left: 8%;
+    top: 45%;
+    height: 250px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    box-shadow: 0px 8px 8px 0px #00000040;
+
+}
+
+.inner-DetailsLEFTbjp{
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    padding: 0px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.cutleftbjp{
+    position: absolute;
+    width: 30px;
+    left: 200px;
+    top: -15px;
+
+}
+#cut1bjp{
+    width: 30px;
+    cursor: pointer;
+}
+#stateleftbjp{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    pointer-events: none;
+}
+#seatsleftbjp{
+    background-color: #343434;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    pointer-events: none;
+
+}
+#mlaleftbjp{
+    background-color: #666666;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+
+}
+#mpleftbjp{
+    background-color: #939393;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+
+}
+#cm-nameleftbjp{
+    background-color: #f97d09;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+
+}
+
+
+
+#RajasthanBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
+#MaharashtraBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
+#JammuBjp{
+    fill: #808080;
+    cursor: pointer;
+}
+#GujaratBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
+#GoaBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
+#LakshadweepBjp{
+    fill: #808080;
+    cursor: pointer;
+}
+#HaryanaBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
+#MadhyaBjp{
+    fill: #f97d09;
+    cursor: pointer;
+}
