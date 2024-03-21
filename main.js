@@ -715,7 +715,7 @@ HaryanaBjp.addEventListener("click", () => {
 
 
 function displaybjpleftStateDetails(state) {
-const statebjpDetails = leftStates.find(item => item.state === state);
+const statebjpDetails = leftBjpStates.find(item => item.state === state);
 if (statebjpDetails) {
   stateleftbjp.innerHTML = statebjpDetails.state;
   seatsleftbjp.innerHTML = "" + statebjpDetails.seats;
@@ -734,3 +734,239 @@ if (statebjpDetails) {
 }
 
   
+
+
+// bjp right states object
+
+
+const bjprightStates = [{
+  state: "UTTARAKHAND",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "UTTAR PRADESH",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "MADHYA PRADESH",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "CHHATTISGARH",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "BIHAR",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+
+{
+  state: "ASSAM",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "MEGHALAYA",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "TRIPURA",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "NAGALAND",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "SIKKIM",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "PUDUCHERRY",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "MANIPUR",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "ARUNACHAL PRADESH",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+},
+{
+  state: "ANDAMAN AND NICCOBAR",
+  seats: "270",
+  mla: "100",
+  mp: "150",
+  cmName: "ASHOK GEHLOT"
+}
+]
+
+
+
+const stateRightbjp = document.getElementById("stateRightbjp");
+const seatsRightbjp = document.getElementById("seatsRightbjp");
+const mlaRightbjp = document.getElementById("mlaRightbjp");
+const mpRightbjp = document.getElementById("mpRightbjp");
+const cmnameRightbjp = document.getElementById("cm-nameRightbjp");
+let popupbjpRight = document.querySelectorAll(".popupbjpRight")
+let cut2bjp = document.getElementById("cut2bjp")
+
+
+
+
+cut2bjp.addEventListener("click",()=>{
+  popupbjpRight.forEach(element => {
+    element.style.display = "none";
+  });
+})
+
+function hidePopupsbjpright() {
+  popupbjpRight.forEach(element => {
+    element.style.display = "block";
+  });
+}
+
+
+
+const UttarakhandBjp = document.getElementById("UttarakhandBjp");
+UttarakhandBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("UTTARAKHAND");
+  hidePopupsbjpright();
+});
+
+let UttarBjp = document.getElementById("UttarBjp")
+UttarBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("UTTAR PRADESH");
+  hidePopupsbjpright();
+});
+
+let MadhyaBjp = document.getElementById("MadhyaBjp")
+MadhyaBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("MADHYA PRADESH");
+  hidePopupsbjpright();
+  console.log("mp");
+});
+
+let ChhattisgarhBjp = document.getElementById("ChhattisgarhBjp")
+ChhattisgarhBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("CHHATTISGARH");
+  hidePopupsbjpright();
+});
+
+let BiharBjp = document.getElementById("BiharBjp")
+BiharBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("BIHAR");
+  hidePopupsbjpright();
+});
+
+let AssamBjp = document.getElementById("AssamBjp")
+AssamBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("ASSAM");
+  hidePopupsbjpright();
+});
+
+let SikkimBjp = document.getElementById("SikkimBjp")
+SikkimBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("SIKKIM");
+  hidePopupsbjpright();
+});
+
+let MeghalayaBjp = document.getElementById("MeghalayaBjp")
+MeghalayaBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("MEGHALAYA");
+  hidePopupsbjpright();
+});
+
+let ManipurBjp = document.getElementById("ManipurBjp")
+ManipurBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("MANIPUR");
+  hidePopupsbjpright();
+});
+
+let NagalandBjp = document.getElementById("NagalandBjp")
+NagalandBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("NAGALAND");
+  hidePopupsbjpright();
+});
+
+let ArunachalBjp = document.getElementById("ArunachalBjp")
+ArunachalBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("ARUNACHAL PRADESH");
+  hidePopupsbjpright();
+});
+
+let TripuraBjp = document.getElementById("TripuraBjp")
+TripuraBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("TRIPURA");
+  hidePopupsbjpright();
+});
+
+let AndamanBjp = document.getElementById("AndamanBjp")
+AndamanBjp.addEventListener("click", () => {
+  displayStateDetailsbjpright("ANDAMAN AND NICCOBAR");
+  hidePopupsbjpright();
+});
+
+
+
+
+
+
+
+function displayStateDetailsbjpright(state) {
+  const statebjprightDetails = bjprightStates.find(item => item.state === state);
+  if (statebjprightDetails) {
+    stateRightbjp.innerHTML = statebjprightDetails.state;
+    seatsRightbjp.innerHTML = "" + statebjprightDetails.seats;
+    mlaRightbjp.innerHTML = "" + statebjprightDetails.mla;
+    mpRightbjp.innerHTML = "" + statebjprightDetails.mp;
+    cmnameRightbjp.innerHTML = "" + statebjprightDetails.cmName;
+  
+    cmnameRightbjp.style.backgroundColor = "";
+  
+    if(state === "ANDAMAN AND NICCOBAR"){
+      cmnameRightbjp.style.backgroundColor = "#808080";
+  
+    }
+  }
+  
+  }
