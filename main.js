@@ -1164,3 +1164,271 @@ const congressRightStates = [
   }
   
   }
+
+
+
+
+
+  
+  
+
+// others page left states object
+
+const othersLeftStates = [
+  {
+    state: "DELHI",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "PUNJAB",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "KERALA",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "LAKSHADWEEP",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "JAMMU AND KASHMIR",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  }
+  ];
+  
+  
+  const stateleftOthers = document.getElementById("stateleftOthers");
+  const seatsleftOthers = document.getElementById("seatsleftOthers");
+  const mlaleftOthers = document.getElementById("mlaleftOthers");
+  const mpleftOthers = document.getElementById("mpleftOthers");
+  const cmnameleftOthers = document.getElementById("cm-nameleftOthers");
+  let popupOthersleft = document.querySelectorAll(".popupOthersleft")
+  let cut1Others = document.getElementById("cut1Others")
+  
+  
+  cut1Others.addEventListener("click",()=>{
+    popupOthersleft.forEach(element => {
+      element.style.display = "none";
+    });
+  })
+  
+  function hidePopupsOthersLeft() {
+    popupOthersleft.forEach(element => {
+      element.style.display = "block";
+    });
+  }
+  
+  
+  // left others states
+  
+  const PunjabOthers = document.getElementById("PunjabOthers");
+  PunjabOthers.addEventListener("click", () => {
+    displayStateDetailsLeftOthers("PUNJAB");
+    hidePopupsOthersLeft();
+  });
+  
+  const KeralaOthers = document.getElementById("KeralaOthers");
+  KeralaOthers.addEventListener("click", () => {
+    displayStateDetailsLeftOthers("KERALA");
+    hidePopupsOthersLeft();
+  });
+  const LakshadweepOthers = document.getElementById("LakshadweepOthers");
+  LakshadweepOthers.addEventListener("click", () => {
+    displayStateDetailsLeftOthers("LAKSHADWEEP");
+    hidePopupsOthersLeft();
+  });
+
+  const JammuOthers = document.getElementById("JammuOthers");
+  JammuOthers.addEventListener("click", () => {
+    displayStateDetailsLeftOthers("JAMMU AND KASHMIR");
+    hidePopupsOthersLeft();
+  });
+  
+  const DelhiOthers = document.getElementById("DelhiOthers");
+  DelhiOthers.addEventListener("click", () => {
+    displayStateDetailsLeftOthers("DELHI");
+    hidePopupsOthersLeft();
+  });
+  
+
+
+  function displayStateDetailsLeftOthers(state) {
+  const stateDetailsOthersLeft = othersLeftStates.find(item => item.state === state);
+  if (stateDetailsOthersLeft) {
+    stateleftOthers.innerHTML = stateDetailsOthersLeft.state;
+    seatsleftOthers.innerHTML = "" + stateDetailsOthersLeft.seats;
+    mlaleftOthers.innerHTML = "" + stateDetailsOthersLeft.mla;
+    mpleftOthers.innerHTML = "" + stateDetailsOthersLeft.mp;
+    cmnameleftOthers.innerHTML = "" + stateDetailsOthersLeft.cmName;
+  
+    cmnameleftOthers.style.backgroundColor = "";
+  
+    if(state === "JAMMU AND KASHMIR" || state === "LAKSHADWEEP"){
+      cmnameleftOthers.style.backgroundColor = "#808080";
+  
+    }
+  }
+  
+  }
+
+
+
+
+
+
+
+  
+
+// others page right states object
+
+const othersRightStates = [
+  {
+    state: "TAMIL NADU",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "ANDHRA PRADESH",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "JHARKHAND",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "WEST BENGAL",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "ANDAMAN AND NICOBAR",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "MIZORAM",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  },
+  {
+    state: "ODISHA",
+    seats: "220",
+    mla: "120",
+    mp: "145",
+    cmName: "SIDDARAMAIAH"
+  }
+  ];
+  
+  
+  const stateRightOthers = document.getElementById("stateRightOthers");
+  const seatsRightOthers = document.getElementById("seatsRightOthers");
+  const mlaRightOthers = document.getElementById("mlaRightOthers");
+  const mpRightOthers = document.getElementById("mpRightOthers");
+  const cmnameRightOthers = document.getElementById("cm-nameRightOthers");
+  let popupOthersRight = document.querySelectorAll(".popupOthersRight")
+  let cut2Others = document.getElementById("cut2Others")
+  
+  
+  cut2Others.addEventListener("click",()=>{
+    popupOthersRight.forEach(element => {
+      element.style.display = "none";
+    });
+  })
+  
+  function hidePopupsOthersRight() {
+    popupOthersRight.forEach(element => {
+      element.style.display = "block";
+    });
+  }
+  
+  
+  // right others states
+  
+  const WestOthers = document.getElementById("WestOthers");
+  WestOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("WEST BENGAL");
+    hidePopupsOthersRight();
+  });
+  
+  const TamilOthers = document.getElementById("TamilOthers");
+  TamilOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("TAMIL NADU");
+    hidePopupsOthersRight();
+  });
+  const OdishaOthers = document.getElementById("OdishaOthers");
+  OdishaOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("ODISHA");
+    hidePopupsOthersRight();
+  });
+
+  const MizoramOthers = document.getElementById("MizoramOthers");
+  MizoramOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("MIZORAM");
+    hidePopupsOthersRight();
+  });
+  
+  const JharkhandOthers = document.getElementById("JharkhandOthers");
+  JharkhandOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("JHARKHAND");
+    hidePopupsOthersRight();
+  });
+  
+  const AndhraOthers = document.getElementById("AndhraOthers");
+  AndhraOthers.addEventListener("click", () => {
+    displayStateDetailsRightOthers("ANDHRA PRADESH");
+    hidePopupsOthersRight();
+  });
+
+  const AndamanOthers = document.getElementById("AndamanOthers")
+  AndamanOthers.addEventListener("click",()=>{
+    displayStateDetailsRightOthers("ANDAMAN AND NICOBAR");
+    hidePopupsOthersRight();
+  })
+  function displayStateDetailsRightOthers(state) {
+  const stateDetailsOthersRight = othersRightStates.find(item => item.state === state);
+  if (stateDetailsOthersRight) {
+    stateRightOthers.innerHTML = stateDetailsOthersRight.state;
+    seatsRightOthers.innerHTML = "" + stateDetailsOthersRight.seats;
+    mlaRightOthers.innerHTML = "" + stateDetailsOthersRight.mla;
+    mpRightOthers.innerHTML = "" + stateDetailsOthersRight.mp;
+    cmnameRightOthers.innerHTML = "" + stateDetailsOthersRight.cmName;
+  
+    cmnameRightOthers.style.backgroundColor = "";
+  
+    if(state === "ANDAMAN AND NICOBAR"){
+      cmnameRightOthers.style.backgroundColor = "#808080";
+  
+    }
+  }
+  
+  }
