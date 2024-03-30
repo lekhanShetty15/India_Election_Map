@@ -1442,6 +1442,7 @@
     display: block;
     width: 100%;
     height: calc(100vh - 60px);
+    object-fit: cover;
 
   }
   
@@ -1485,7 +1486,7 @@
 
 
 }
-.back{
+.bjpback{
     width: 70%;
     height: 70vh;
     border-top-right-radius: 35px;
@@ -1498,7 +1499,7 @@
     flex-direction: column;
     gap: 15px;
 }
-.candidatesBtn{
+.bjpcandidatesBtn{
     width: 80%;
     height: 13.5%;
     border-radius: 15px;
@@ -1514,7 +1515,7 @@
     transition: .2s;
 
 }
-.candidatesBtn:hover{
+.bjpcandidatesBtn:hover{
     transform: translateY(-4px);
     transition: .3s;
 }
@@ -1527,6 +1528,158 @@
     flex-direction: column;
 }
 .bjpImg{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    margin-left: 120px;
+
+}
+.text{
+    padding: 20px;
+    margin-top: -1px;
+    margin-left: 138px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 15px;
+    text-align: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+/* main congress page */
+
+.congressPagenav{
+    width: 100%;
+    height: 60px;
+    background-color: #309cf6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.congressNav{
+    background-color: #309cf6;
+    border: none;
+   
+}
+.congressNavTitle{
+    color: white;
+}
+
+.image-container {
+    position: relative;
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 60px);
+    object-fit: cover;
+
+  }
+  
+
+
+
+.congressPageContainer{
+    position: absolute;
+    margin-top: -565px;
+    height: calc(100vh - 60px);
+    width: 100%;
+   
+   
+}
+
+.congressNavLogo{
+    width: 50px;
+}
+.boxNavcongress{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #309cf6;
+    box-shadow: 0px 3px 3px 0px #00000040;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congressPageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.listBtn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+
+}
+.congressback{
+    width: 70%;
+    height: 70vh;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: rgba(48, 156, 246, 0.5);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.congresscandidatesBtn{
+    width: 80%;
+    height: 13.5%;
+    border-radius: 15px;
+    border: solid white 3.5px;
+    background-color: #309cf6;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .2s;
+
+}
+.congresscandidatesBtn:hover{
+    transform: translateY(-4px);
+    transition: .3s;
+}
+
+.photoAndText{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.congressImg{
     width: 80%;
     display: flex;
     justify-content: end;
