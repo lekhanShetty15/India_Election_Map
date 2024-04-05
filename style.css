@@ -1846,3 +1846,163 @@
     color: white;
 
 }
+
+
+.mainPageNavSlide{
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    z-index: 3;
+
+}
+
+
+.indiaFlagImg{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.mainFisrt{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+    gap: 50px;
+    
+}
+
+
+.indiaFlag {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Change the alpha value to adjust the overlay opacity */
+    z-index: 1;
+  }
+
+  .textMain{
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: 100px;
+  }
+
+  .mainTitle{
+    color: #f97d09;
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+  .mainSlogan{
+    font-size: 80px;
+    line-height: 100px;
+    color: rgb(245, 245, 245);
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  .Pbutn{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .partyBtn{
+    background-color: #f97d09;
+    color: white;
+  }
+  .mainButtons{
+    display: flex;
+    gap:25px;
+  }
+
+
+  .mainImage{
+    width: 50%;
+  }
+
+  .modiimage{
+    width: 550px;
+    margin-top: 47px;
+  }
+
+
+  .about{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    text-align: left;
+    padding: 30px 60px;
+  }
+
+
+
+
+  .second{
+    margin-top: 938px;
+  }
+  .third{
+    margin-top: 1875px;
+
+  }
+  .rahulimage{
+    width: 520px;
+    margin-top: 58px;
+
+  }
+  .secondTitle{
+    color: #309cf6;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .secondBtn{
+    background-color: #309cf6;
+    color: white;
+  }
+
+  .othersTitle{
+    color: #166A2F;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .otherBtn{
+    background-color: #166A2F;
+    color: white;
+  }
+
+
+  .link{
+    text-decoration: none;
+    color: white;
+  }
+  .link2{
+    text-decoration: none;
+    color: black;
+  }
